@@ -17,8 +17,12 @@ header, nav, footer, main, section, article, aside,
 ol, ul, li, dl, dt, dd,
 ```
 
-# 23/06/23~
+# 23/06/23~23/06/27
 
 ```
 a, href, target, mailto:, href="#", ./, ../
+img, src, alt, figure, figcaption,
+video, autoplay, muted, loop, controls
+table, thead, tbody, tfoot, tr, th, tb, rowspan, colspan, scope
+form, action, method, fieldset, legend, input
 ```
