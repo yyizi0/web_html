@@ -1,0 +1,30 @@
+* {box-sizing: border-box;}
+/* 웹글꼴 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+/* 로컬글꼴 font-face */
+/* font-face로 연결하려는 로컬글꼴의 글꼴명, 글꼴의 경로를 먼저 작성해야한다! */
+@font-face {
+    font-family:'62570_메인';/* 글꼴명 지정 */
+    src:url(../fonts/62570.ttf);/* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'힘내_서브';
+    src:url(../fonts/him.ttf);
+}
+/* reset.css */
+html,body,
+h1,h2,h3,h4,h5,h6,p,blockquote,address,
+span,strong,em,q,sub,sup,del,s,a,img,
+div,header,nav,aside,main,footer,article,figure,figcaption,
+section,video,
+table,thead,tbody,tfoot,tr,th,td,ul,ol,li,dl,dt,dd,
+form,fieldset,legend,input,select,option,button,label,textarea {
+    font-family:'62570_메인';
+    margin:0; padding:0; line-height:1.0; font-size:16px; font-style:normal;
+    font-weight:normal; text-align:left; text-decoration:none;
+}
+table,tr,th,td {border-collapse:collapse;}
+ul,ol,li {list-style:none;}
+a {color:#000;}
+input {outline:none; border:0;}
