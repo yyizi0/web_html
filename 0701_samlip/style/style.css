@@ -1,0 +1,109 @@
+/* header */
+header {
+    background-color: yellow;
+    width:1200px; height: 92px;
+    margin:0 auto;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {
+    width:60px; height:70px;
+    float:left;
+    margin:11px 0 0 20px;
+}
+/* header-nav */
+header nav {
+    background-color: skyblue;
+    float:left;
+    margin:39px 234px;
+}
+header nav ul {}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    font-size: 1.2rem;
+}
+header .lnb {
+    background-color: aqua;
+    float:right;
+    margin:39px 20px 0 0;
+}
+header .lnb li {
+    display:inline;
+}
+header .lnb li a {
+    font-size: 1.2rem;
+}
+/* main */
+main {
+    background-color: coral;
+}
+main .breadcrumbs_bg {
+    background-color: #F1F1F1;
+    height: 58px;
+}
+main .breadcrumbs_bg a {
+}
+main .breadcrumbs_bg em {}
+/* main-contents1 */
+main .contents1 {
+    background-color: greenyellow;
+    padding:70px 0;
+}
+main .contents1 h1 {
+    font-size: 2.074rem;
+    text-align: center;
+}
+main .contents1 p {
+    text-align: center;
+    
+}
+/* main-contents2 */
+main .c2_bg {
+    background-color: #F1F1F1;
+}
+main .c2_bg .contents2 {}
+main .c2_bg .contents2 p {
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+}
+/* main-contents3 */
+main .contents3 {
+    background-color: dodgerblue;
+}
+main .contents3 h2 {}
+main .contents3 h2+p {}
+/* main-contents4 */
+main .c4_bg {background-color: #F1F1F1;}
+main .c4_bg .contents4 {}
+main .c4_bg .contents4 h2 {}
+main .c4_bg .contents4 .goal {
+    background-color: darksalmon;
+}
+main .c4_bg .contents4 .goal li {}
+main .c4_bg .contents4 .strategy {
+    background-color: deeppink;
+}
+main .c4_bg .contents4 .strategy li {}
+main .c4_bg .contents4 .strategy li h3 {}
+main .c4_bg .contents4 .strategy li p {}
+/* footer */
+footer {
+    background-color: darkgrey;
+}
+footer .f_top {}
+footer .f_top .fnb {
+    float:left;
+}
+footer .f_top .fnb li {}
+footer .f_top .fnb li a {}
+footer .f_top .site {
+    float:right;
+}
+footer .f_top .site li {}
+footer .f_top .site li a {}
+footer .f_btm {}
+footer .f_btm address {}
+footer .f_btm p {}
