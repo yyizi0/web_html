@@ -43,9 +43,10 @@ main .breadcrumbs_bg {
     background-color: #F1F1F1;
     height: 58px;
 }
-main .breadcrumbs_bg a {
+main .breadcrumbs_bg .breadcrumbs {}
+main .breadcrumbs_bg .breadcrumbs a {
 }
-main .breadcrumbs_bg em {}
+main .breadcrumbs_bg .breadcrumbs em {}
 /* main-contents1 */
 main .contents1 {
     background-color: greenyellow;
