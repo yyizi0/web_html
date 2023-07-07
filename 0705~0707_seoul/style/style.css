@@ -1,75 +1,194 @@
-header {}
+/* popup */
+#top {
+    position:fixed; right:50px; bottom:50px;
+    width:34px; height: 34px;
+}
+#top img {width:100%;}
+/* all layout */
+header, 
+main .visual, 
+main .service, 
+main .bnr_bg .bnr, 
+main .board, 
+main .field_info, 
+main .news,
+footer {
+    width:1152px; margin: 0 auto;
+    background-color: aqua;
+}
+/* header */
+header {
+    
+}
 /* header-h top */
-header #h_top {}
-header #h_top .left {}
-header #h_top .left h1 {}
+header #h_top {
+    background-color: chartreuse;
+    height: 48px;
+}
+header #h_top .left {
+    background-color: coral;
+    float: left;
+}
+header #h_top .left h1 {
+    width: 110px; height:28px;
+    float: left; padding-top:10px;
+}
 header #h_top .left h1 a {}
-header #h_top .left h1 a img {}
-header #h_top .left nav {}
+header #h_top .left h1 a img {width: 100%;}
+header #h_top .left nav {
+    margin-left:20px;
+    float: left;
+}
 header #h_top .left nav ul {}
-header #h_top .left nav ul li {}
-header #h_top .left nav ul li a {}
-header #h_top .right {}
-header #h_top .right li {}
-header #h_top .right li a {}
+header #h_top .left nav ul li {float: left; margin-left:20px;}
+header #h_top .left nav ul li a {line-height: 48px; letter-spacing: -0.02em}
+header #h_top .right {background-color: beige; float: right;}
+header #h_top .right li {float:left; margin-left:20px;}
+header #h_top .right li:nth-child(1) {margin-left: 0px;}
+header #h_top .right li a {line-height:48px; letter-spacing: -0.02em;}
 /* header-h btm*/
-header #h_btm {}
-header #h_btm h1 {}
+header #h_btm {
+    background-color: hotpink;
+    height: 119px;
+}
+header #h_btm h1 {
+    background-color: aqua;
+    float:left; width:150px; height:28px; margin-top: 45px;
+}
 header #h_btm h1 a {}
-header #h_btm h1 a img {}
-header #h_btm #search_frm {}
-header #h_btm #search_frm fieldset {}
-header #h_btm #search_frm fieldset legend {}
-header #h_btm #search_frm fieldset input {}
-header #h_btm #search_frm fieldset #search_btn {}
-header #h_btm #search_frm fieldset #search_btn img {}
-header #h_btm .right {}
-header #h_btm .right #lang_frm {}
-header #h_btm .right #lang_frm fieldset {}
-header #h_btm .right #lang_frm fieldset legend {}
-header #h_btm .right #lang_frm fieldset select {}
+header #h_btm h1 a img {width:100%;}
+header #h_btm #search_frm {
+    background-color:lightblue;
+    float:left;
+    width: 369px; height: 46px;
+    border: 2px solid #1e6cb3;
+    padding: 10px 20px 0;
+    margin:36px 0 0 230px;
+}
+header #h_btm #search_frm fieldset {border: 0;}
+header #h_btm #search_frm fieldset legend {display: none;}
+header #h_btm #search_frm fieldset input {
+    float:left; width:calc(100% - 20px);
+}
+header #h_btm #search_frm fieldset input::placeholder {letter-spacing: -0.02em; color:#1e6cb3;}
+header #h_btm #search_frm fieldset #search_btn {
+    float: right; 
+    border: 0; background:none;
+    width: 20px; height: 20px;
+    cursor:pointer;
+}
+header #h_btm #search_frm fieldset #search_btn img {width:100%;}
+header #h_btm .right {
+    background-color: darksalmon;
+    float:right; margin-top: 18px;
+}
+header #h_btm .right #lang_frm {text-align: right;}
+header #h_btm .right #lang_frm fieldset {border: 0;}
+header #h_btm .right #lang_frm fieldset legend {display: none;}
+header #h_btm .right #lang_frm fieldset select {
+    border: 1px solid #1e6cb3; width: 93px; padding: 5px 0;
+    font-size:0.833rem; letter-spacing: -0.02em;
+    margin-right: 10px;
+}
 header #h_btm .right #lang_frm fieldset select option {}
-header #h_btm .right #lang_frm fieldset #lang_btn {}
-header #h_btm .right .weather {}
+header #h_btm .right #lang_frm fieldset #lang_btn {
+    border: 0; background-color: #1e6cb3;
+    font-size:0.833rem; letter-spacing: -0.02em;
+    width: 30px; height: 28px;
+    color:#fff;
+    cursor: pointer;
+}
+header #h_btm .right .weather {margin-top: 5px;}
 header #h_btm .right .weather .current_weather {}
-header #h_btm .right .weather .current_weather em {}
-header #h_btm .right .weather .current_dust {}
+header #h_btm .right .weather .current_weather em {
+    font-size: 2.074rem; font-weight:500; letter-spacing: -0.02em;
+}
+header #h_btm .right .weather .current_dust {margin-top: 5px; font-size: 0.833rem; letter-spacing: -0.02em;}
 /* main */
 main {}
 /* main-1광고배너*/
-main .visual {}
-main .visual .left {}
-main .visual .left img {}
-main .visual .left .close {}
-main .visual .right {}
-main .visual .right .covid {}
-main .visual .right .covid .date {}
-main .visual .right .covid .data {}
-main .visual .right .covid .data1 {}
-main .visual .right .covid .data2 {}
-main .visual .right .covid .data3 {}
-main .visual .right .covid .data4 {}
-main .visual .right .covid .data5 {}
-main .visual .right .covid img {}
-main .visual .right .traffic {}
-main .visual .right .traffic img {}
+main .visual {background-color: greenyellow; overflow: hidden;}
+main .visual .left {
+    background-color: moccasin;
+    position: relative;/* 겹치는 대상 부모기준 */
+    width:770px; height:350px;
+    float:left;
+}
+main .visual .left img {width:100%;}
+main .visual .left .close {
+    font-weight: 500; letter-spacing: -0.02em;
+    background-color: #1e6cb3;
+    padding: 10px; color:#fff; 
+    border-radius: 5px;
+    position: absolute; /* 겹치는 대상 */
+    right:10px; bottom:10px;
+}
+main .visual .right {
+    background-color: bisque;
+    float:right; width:360px;
+}
+main .visual .right .covid {
+    height:230px;
+    position: relative;
+    display: block; margin-bottom: 10px;
+}
+main .visual .right .covid span {
+    position:absolute; letter-spacing: -0.02em;
+}
+main .visual .right .covid .date {right:20px; top:18px; color:#000;}
+main .visual .right .covid .data {color:#fff;}
+main .visual .right .covid .data1 {left:81px; top:85px;}
+main .visual .right .covid .data2 {right:86px; top:85px;}
+main .visual .right .covid .data3 {left:59px; bottom:57px;}
+main .visual .right .covid .data4 {right:162px; bottom:57px;}
+main .visual .right .covid .data5 {right:52px; bottom:57px;}
+main .visual .right .covid img {width: 100%;}
+main .visual .right .traffic {height:110px;}
+main .visual .right .traffic img {width:100%;}
+/* 주요서비스~새소식 제목 디자인 그룹 */
+/* 정리후 */
+main section .title {background-color: chocolate;}
+main section .title h2 {background-color: aquamarine;}
+main section .title .site {background-color: yellow;}
+main section .title .more {background-color: yellowgreen;}
+/* 정리전 */
+/* main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .field_info .title {}
+main .field_info .title h2 {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title .more {} */
 /* main-2주요서비스*/
-main .service {}
+main > .service {background-color: lightgreen;}
 main .service .title {}
 main .service .title h2 {}
 main .service .title .site {}
 main .service .contents {}
-main .service .contents a {}
+main .service .contents a {display: inline-block;}
 main .service .contents a img {}
 main .service .contents a span {}
 /* main-3배너*/
-main .bnr_bg {}
+main .bnr_bg {background-color: #eff4f8;}
 main .bnr_bg .bnr {}
 main .bnr_bg .bnr a {}
 main .bnr_bg .bnr a img {}
 /* main-4게시판*/
-main .board {}
-main .board .event {}
+main .board {
+    background-color: plum;
+}
+main .board .event {
+    background-color: gold;
+}
 main .board .event .title {}
 main .board .event .title h2 {}
 main .board .event .title .more {}
@@ -81,7 +200,9 @@ main .board .event .contents a .environment {}
 main .board .event .contents a .welfare {}
 main .board .event .contents a .housing {}
 main .board .event .contents a .culture {}
-main .board .festival {}
+main .board .festival {
+    background-color: lightcyan;
+}
 main .board .festival .title {}
 main .board .festival .title h2 {}
 main .board .festival .title .more {}
@@ -91,13 +212,17 @@ main .board .festival .contents a span {}
 main .board .festival .contents a .environment {}
 main .board .festival .contents a .economy {}
 main .board .festival .contents a .culture {}
-main .board .service {}
+main .board .service {
+    background-color: cornflowerblue;
+}
 main .board .service .title {}
 main .board .service .title h2 {}
 main .board .service .contents {}
 main .board .service .contents a {}
 /* main-5분야정보*/
-main .field_info {}
+main .field_info {
+    background-color: grey;
+}
 main .field_info .title {}
 main .field_info .title h2 {}
 main .field_info .contents {}
@@ -105,7 +230,9 @@ main .field_info .contents a {}
 main .field_info .contents a img {}
 main .field_info .contents a span {}
 /* main-6새소식*/
-main .news {}
+main .news {
+    background-color: lightcoral;
+}
 main .news .title {}
 main .news .title h2 {}
 main .news .title .more {}
@@ -114,14 +241,20 @@ main .news .contents a {}
 main .news .contents a img {}
 main .news .contents a span {}
 /* footer-f top */
-footer {}
-footer .top {}
+footer {
+    background-color: greenyellow;
+}
+footer .top {
+    background-color: beige;
+}
 footer .top .left {}
 footer .top .left a {}
 footer .top .right {}
 footer .top .right a {}
 /* footer-f btm */
-footer .btm {}
+footer .btm {
+    background-color: mediumspringgreen;
+}
 footer .btm .left {}
 footer .btm .left p {}
 footer .btm .left p img {}
