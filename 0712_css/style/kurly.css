@@ -1,0 +1,120 @@
+/* rgb(95 3 128) */
+/* 1050px */
+/* all layout */
+.top_bnr_bg .top_bnr,
+header {
+    margin: 0 auto; width:1050px;
+}
+/* header-sprite 그룹 선택자 */
+header .middle .logo h1, 
+header .middle #searchFrm fieldset #search_btn,
+header .middle .lnb a,
+header .menu_btm .all_nav .menu {
+    background: url(../images/kurly_img/icon_set.png) no-repeat;
+    width: 36px; height: 36px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+/* top bnr bg */
+.top_bnr_bg {background-color: rgb(95 3 128);}
+/* top bnr */
+.top_bnr_bg .top_bnr {
+    height: 42px; display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.top_bnr_bg .top_bnr .ad {color:#fff;}
+.top_bnr_bg .top_bnr .ad em {font-weight: 700;}
+.top_bnr_bg .top_bnr .close {position:absolute; right:0;}
+.top_bnr_bg .top_bnr .close .fa-xmark {color:#fff;}
+/* header */
+header {}
+/* header user lnb */
+header .user_lnb {
+    height: 35px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .user_lnb a {font-size: 0.833rem;}
+header .user_lnb a:first-child::before {display: none;}
+header .user_lnb a::before {
+    content:" ";
+    display: inline-block;
+    width:1px; height: 11px;
+    background-color: #aaa;
+    margin: 0 10px;
+}
+header .user_lnb .join {color:rgb(95 3 128);}
+header .user_lnb .login {}
+header .user_lnb .customer_service {}
+/* header middle */
+header .middle {
+    height:63px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .middle .logo {
+    display:flex; flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+header .middle .logo h1 {background-position:0 -158px; width: 82px; height: 42px;}
+header .middle .logo .main_lnb {}
+header .middle .logo .main_lnb a {font-size: 1.2rem; font-weight: 700;}
+header .middle .logo .main_lnb a:first-child::after {
+    content:'';
+    display:inline-block;
+    margin: 0 10px;
+    width: 1px; height: 14px;
+    background-color: #aaa;
+}
+header .middle .logo .main_lnb .market {margin-left: 10px; color: rgb(95 3 128);}
+header .middle .logo .main_lnb .beauty {position: relative; color:#aaa;}
+header .middle .logo .main_lnb .beauty span {
+    font-weight: 700;
+    position: absolute; bottom: 15px; 
+    font-size: 0.833rem;
+    color:rgb(255, 60, 0);
+}
+header .middle #searchFrm {
+    width:400px; padding:5px 10px;
+    border:1px solid rgb(95 3 128);
+    border-radius: 5px;
+}
+header .middle #searchFrm fieldset {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header .middle #searchFrm fieldset #search_txt {width: calc(100% - 36px);}
+header .middle #searchFrm fieldset #search_btn {background-position:0 -86px;}
+header .middle .lnb {
+
+}
+header .middle .lnb a {margin-left: 20px;}
+header .middle .lnb .map {background-position:0 -50px;}
+header .middle .lnb .like {background-position: 0 -14px;}
+header .middle .lnb .cart {background-position:0 -122px;}
+/* header menu btm */
+header .menu_btm {
+    height: 56px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu_btm .all_nav {}
+header .menu_btm .all_nav .menu {background-position: 0 0; width:16px; height:14px;}
+header .menu_btm .all_nav span {}
+header .menu_btm nav {}
+header .menu_btm nav a {margin-right: 20px;}
+header .menu_btm .delivery_info {border:1px solid #aaa; border-radius:10px;}
+header .menu_btm .delivery_info em {}
+header .menu_btm .delivery_info em .fa-circle {font-size: 1px;}
+header .menu_btm .delivery_info span {}
