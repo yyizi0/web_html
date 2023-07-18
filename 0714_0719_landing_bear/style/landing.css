@@ -1,0 +1,258 @@
+/* all layout */
+section > div {
+    width: 1200px; margin:0 auto;
+}
+/* 1. title */
+.title_wrap {
+    background: url(../images/bg1.png) no-repeat fixed center 70%;
+    background-size: cover;
+    position: relative;
+}
+.title_wrap #snow {
+    position: absolute; top:0; left:0; z-index: 200;
+    width: 100%; height: 800px;
+}
+.title_wrap::after {
+    content:""; display: block;
+    height: 800px; width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(0,0,0,0.7) 100%);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 90;
+    /* absolute 적용시 기본 block w100% inline처럼 변한다. */
+}
+.title_wrap .title {
+    max-width: 1200px; min-width:320px;
+    height: 800px;
+    margin:0 auto;
+    display: flex; flex-flow:column nowrap; align-items: center;
+    text-align: center;
+    z-index:100; position: relative;
+}
+.title_wrap .title .logo {
+    width: 50px; height: 50px;
+    align-self: flex-start;
+}
+.title_wrap .title .logo img {width:100%;}
+.title_wrap .title h1 {
+    font-size: 3.157rem; line-height: 90px; 
+    font-weight: 500; color: #fff;
+    margin: 216px 0 50px 0;
+}
+.title_wrap .title h1 em {font-size: 3.157rem; font-weight: 700; color: #fff;}
+.title_wrap .title .support_btn {
+    padding:30px 70px;
+    border-radius: 47px;
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    margin-bottom: 34px;
+    cursor:pointer;
+}
+.title_wrap .title .support_btn span {
+    font-size: 1.777rem; font-weight: 500;
+    color: #fff;
+    letter-spacing: -0.04em;
+    margin-right: 10px;
+}
+.title_wrap .title .support_btn img {width: 24px; height: 24px;}
+.title_wrap .title .support_qa {
+    align-self: flex-end;
+    padding:15px 20px;
+    border-radius: 28px;
+    background-color: #222;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    gap:10px;
+    cursor:pointer;
+}
+.title_wrap .title .support_qa img {width: 24px; height: 24px;}
+.title_wrap .title .support_qa span {
+    color:#fff;
+    font-size: 1.333rem; font-weight: 500;
+    letter-spacing: -0.04em;
+}
+/* 2. 퀴즈 */
+.quiz_wrap {
+    background:url(../images/quiz_bg.png) no-repeat fixed center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.quiz_wrap .quiz {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz_wrap .quiz .left {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    gap:35px;
+}
+.quiz_wrap .quiz .left h2 {font-size: 3.157rem; font-weight: 700; letter-spacing: -0.04em; color: #fff;}
+.quiz_wrap .quiz .left h3 {font-size: 1.333rem; font-weight: 500; letter-spacing: -0.04em; color: #fff;}
+.quiz_wrap .quiz .left #quizFrm {align-self: flex-start;}
+.quiz_wrap .quiz .left #quizFrm fieldset {}
+.quiz_wrap .quiz .left #quizFrm fieldset ul {}
+.quiz_wrap .quiz .left #quizFrm fieldset ul li {margin-bottom: 25px;}
+.quiz_wrap .quiz .left #quizFrm fieldset ul li:last-child {margin-bottom: 0;}
+.quiz_wrap .quiz .left #quizFrm fieldset ul li label {
+}
+.quiz_wrap .quiz .left #quizFrm fieldset ul li label input {appearance: none; /* form input 요소 숨기기 */}
+.quiz_wrap .quiz .left #quizFrm fieldset ul li label span {
+    background: url(../images/icons/quiz_uncheck.png) no-repeat left;
+    cursor:pointer;
+    padding-left: 34px;
+    color: #fff; font-size: 1.333rem; letter-spacing: -0.04em;
+}
+/* 상태선택자 (radio check 될 경우 span의 이미지 변경하기 */
+.quiz_wrap .quiz .left #quizFrm fieldset ul li label input:checked + span {background: url(../images/icons/quiz_check.png) no-repeat left;}
+.quiz_wrap .quiz .left #quizFrm fieldset #answer_btn {
+    background-color: #222;
+    padding: 20px 170px;
+    border-radius: 30px;
+    margin-top: 35px;
+    color: #fff; font-size: 1.333rem; font-weight: 500; letter-spacing: -0.04em;
+}
+.quiz_wrap .quiz .right {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.quiz_wrap .quiz .right h2 {
+    width: 550px; padding: 25px 0;
+    background-color: #ff7200;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color:#fff; font-size: 1.333rem; font-weight: 700;
+    letter-spacing: -0.04em;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.quiz_wrap .quiz .right h2 img {margin-right: 10px;}
+.quiz_wrap .quiz .right .contents {
+    width: 550px; padding: 70px 0;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.quiz_wrap .quiz .right .contents em {color:#ff7200; font-size: 5.000rem; font-weight: 700;}
+.quiz_wrap .quiz .right .contents span:first-of-type {color: #ff7200;}
+.quiz_wrap .quiz .right .contents span {font-size: 2.369rem; align-self: flex-end; font-weight: 700;}
+.quiz_wrap .quiz .right .update {color:#fff;}
+.vidio_wrap {
+    background: url(../images/video_bg.png) no-repeat scroll center;
+    background-size:cover;
+    padding: 100px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.vidio_wrap h2 {
+    font-size: 3.157rem; line-height: 90px;
+    font-weight: 500;
+    text-align: center;
+}
+.vidio_wrap iframe {
+    width: 800px; height: 500px;
+}
+.vidio_wrap .support_btn {
+    display: flex;
+    flex-flow:row nowrap;
+    padding: 30px 70px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    border-radius: 47px;
+    cursor:pointer;
+}
+.vidio_wrap .support_btn span {font-size: 1.777rem; font-weight: 500; color: #fff; margin-right: 10px;}
+.vidio_wrap .support_btn img {}
+/* 4. 50%감소/6. 지구전체의 위기 */
+.news_wrap {
+    background:url(../images/50_bg.png) no-repeat scroll center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.news_wrap .news {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: flex-start;
+    gap: 50px;
+
+}
+.news_wrap .news h2 {
+    font-size: 3.15rem;
+    font-weight: 700; line-height: 90px;
+    color: #fff;
+}
+.news_wrap .news h2 span {
+    background-color: #fff;
+    font-size: 3.15rem;
+    font-weight: 700; line-height: 90px;
+    color:#000;
+}
+.news_wrap .news p {
+    font-size: 1.75rem; letter-spacing: -0.035rem;
+    line-height: 60px;
+    color: #fff;
+}
+.news_wrap .news p:nth-last-child(1) {width: 1200px; height: 600px;}
+.news_wrap .news p img {width: 100%;}
+/* 5. 빙하가 녹으면 */
+.melt_wrap {
+    background: #f1f1f1;
+    padding: 100px 0;
+    text-align: center;
+}
+.melt_wrap .melt {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    gap:100px;
+}
+.melt_wrap .melt h2 {
+    font-size: 3.15rem;
+    font-weight: 700; line-height: 90px;
+}
+.melt_wrap .melt .contents {
+    font-size: 1.75rem; letter-spacing: -0.035rem;
+    line-height: 60px; font-weight: 500;
+}
+.melt_wrap .melt ul {
+    display: flex;
+    flex-flow:row nowrap;
+}
+.melt_wrap .melt ul li {
+    width: calc(33.33% - 40px / 3);
+    margin-right: 20px;
+}
+.melt_wrap .melt ul li:last-child {margin-right:0;}
+.melt_wrap .melt ul li .top {
+    height: 300px;
+    width: 100%;
+    padding-top:50px;
+    background: no-repeat center;
+    background-size: cover;
+}
+.melt_wrap .melt ul li:nth-child(1) .top {background-image:url(../images/28.png);}
+.melt_wrap .melt ul li:nth-child(2) .top {background-image:url(../images/27.png);}
+.melt_wrap .melt ul li:nth-child(3) .top {background-image:url(../images/28.png);}
+.melt_wrap .melt ul li .top h3 {font-size: 3.15rem; font-weight: 700; color:#fff; margin-bottom:30px;}
+.melt_wrap .melt ul li .top p {color:#fff;}
+.melt_wrap .melt ul li .list_contents {
+    background-color: #fff;
+    padding:30px;
+    height: 250px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+}
